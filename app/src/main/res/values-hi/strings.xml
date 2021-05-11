@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">LetsPaaniDriver</string>
+<string name="action_settings">Settings</string>
+<string name="google_map_key">AIzaSyCYwlqPDipbyNoR18dWmUxBZRN8YWTC2ow</string>
+<string name="Bank_prompt">Choose a Bank</string>
+<string-array name="Bank_name">
+<item>--SELECT YOUR BANK--</item>
+<item>ALLAHABAD BANK</item>
+<item>ANDHRA BANK</item>
+<item>BANK OF BARODA</item>
+<item>BANK OF INDIA</item>
+<item>BANK OF MAHARASHTRA</item>
+<item>CANARA BANK</item>
+<item>CENTRAL BANK OF INDIA</item>
+<item>CORPORATION BANK</item>
+<item>IDBI BANK LTD</item>
+<item>IND BANK HOUSING LTD</item>
+<item>INDBANK MERCHANT BANKING SERVICES LTD</item>
+<item>INDIAN BANK</item>
+<item>INDIAN OVERSEAS BANK</item>
+<item>JAMMU AND KASHMIR BANK LTD</item>
+<item>ORIENTAL BANK OF COMMERCE</item>
+<item>PNB GILTS LTD</item>
+<item>PUNJAB AND SIND BANK</item>
+<item>PUNJAB NATIONAL BANK</item>
+<item>STATE BANK OF INDIA</item>
+<item>SYNDICATE BANK</item>
+<item>UCO BANK</item>
+<item>UNION BANK OF INDIA</item>
+<item>UNITED BANK OF INDIA</item>
+<item>AXIS BANK</item>
+<item>BANDHAN BANK</item>
+<item>CATHOLIC Syrian BANK</item>
+<item>CITY UNION BANK</item>
+<item>DCB BANK</item>
+<item>DHANLAXMi BANK</item>
+<item>FEDERAL BANK</item>
+<item>HDFC BANK</item>
+
+
+</string-array>
+
+<string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+        <!--LoginScreenHindi-->
+        <string name="login_for">टैंकर चालकों के लिए</string>
+        <string name="mobileno_hint">मोबाइल नंबर</string>
+
+        <string name="login_button">लॉग इन</string>
+        <string name="new_on_lets">Let\'s Paani पर नया?</string>
+        <string name="registernow">रजिस्टर करे</string>
+        <string name="hindi">हिंदी</string>
+
+
+        <!--order history-->
+
+        <string name="order_req">ऑर्डर अनुरोध</string>
+        <string name="order_acc">ऑर्डर स्वीकार</string>
+        <string name="active_hr">सक्रिय घंटे</string>
+        <string name="cencel_by_c">ग्राहक द्वारा रद्द </string>
+        <string name="cencel_by_driver">डिलीवरी मैन द्वारा रद्द</string>
+        <string name="delivery_complete">वितरण पूरा</string>
+        <string name="earning">दिन की कमाई</string>
+
+        <!--home activity-->
+        <string name="finish_water_delivery">वर्तमान डिलीवरी समाप्त करे</string>
+        <string name="start_water">जल वितरण शुरू</string>
+
+        <string name="deliver">वितरण करे </string>
+        <string name="alert">अधिसूचना!</string>
+        <string name="water_request">पानी की आवश्यकता</string>
+        <string name="accept">स्वीकार </string>
+        <string name="reject">अस्वीकार</string>
+        <string name="have_you_reached">क्या आप ग्राहक के पते पर पहुँच गए?</string>
+        <string name="customer_location">ग्राहक की स्थिति</string>
+        <string name="no">नहीं</string>
+        <string name="yes">हाँ</string>
+        <string name="Deliver">वितरण</string>
+        <string name="cencel">रद्द करना</string>
+        <string name="navigation">पथ प्रदर्शन</string>
+        <string name="customer_add">ग्राहक का पता</string>
+
+
+        <!--activity ordercancelbyuser-->
+        <string name="order_cancel">ऑर्डर रद्द किया गया</string>
+        <string name="your_order_cencel">आपका ऑर्डर रद्द कर दिया गया है</string>
+        <string name="ok">ठीक</string>
+
+
+
+        <!--reach location-->
+        <string name="order_id">ऑर्डर क्रम</string>
+        <string name="name">नाम</string>
+        <string name="deliver_address">वितरण का पता</string>
+        <string name="payment_mode">भुगतान का प्रकार</string>
+        <string name="delivery_time">वितरण समय </string>
+
+        <string name="total_collect_amount">कुल संग्रहणीय राशि</string>
+        <string name="tanker_type">टैंकर का प्रकार</string>
+        <string name="distance_travelled">तय की दूरी</string>
+        <string name="delivery_charge">वितरण चार्ज</string>
+        <string name="discount_applied">छूट लागू</string>
+
+
+        <!--register-->
+
+        <string name="email_id">ईमेल आईडी</string>
+        <string name="address">पता</string>
+        <string name="register">रजिस्टर</string>
+
+
+        <!--bank details-->
+        <string name="add_bank_details">बैंक विवरण जोड़ें</string>
+        <string name="bank_name">बैंक का नाम</string>
+        <string name="bank_account_no">बैंक खाता न.</string>
+        <string name="ifsc_code">IFSC कोड</string>
+        <string name="submit">जमा करें</string>
+
+        <!--drawer list-->
+        <string name="order_preference">ऑर्डर पसंद</string>
+        <string name="payouts">भुगतान</string>
+        <string name="trip_history">यात्रा इतिहास</string>
+        <string name="history">इतिहास</string>
+        <string name="ratings">रेटिंग</string>
+        <string name="privacy_ploicy">गोपनीयता नीति</string>
+        <string name="term_condition">शर्तें तथा नियम</string>
+        <string name="change_lang">भाषा परिवर्तन</string>
+        <string name="help">हेल्प</string>
+        <string name="logout">एग्जिट लेट्स पैनी ऐप</string>
+
+
+        <!--confirm water delivery-->
+        <string name="confirm">पुष्टि करें</string>
+        <string name="complete_water_delivery">क्या आपने पूरा पानी वितरित किया है ?</string>
+
+
+
+
+        <!--gallary camera-->
+        <string name="select_image">छवि चुने</string>
+        <string name="camera">कैमरा</string>
+        <string name="gallery">गेलरी</string>
+
+
+
+        <!--rating given by tanker-->
+        <string name="rating">रेटिंग</string>
+        <string name="rating_by_tanker">कृपया ग्राहक को रेटिंग दें</string>
+
+
+
+        <!--  otp activity-->
+        <string name="otp_activity_txt">6-अंको के कोड को दर्ज करें</string>
+        <string name="varify_otp">सत्यापित करें</string>
+
+        <!--trip history activity-->
+        <string name="current">वर्तमान</string>
+        <string name="delivered">पहुंचा दिया</string>
+        <string name="cancelled">रद्द</string>
+
+        <!--support activity-->
+        <string name="call">कॉल</string>
+        <string name="message">संदेश</string>
+        <string name="support_content_form">कृपया, संपर्क करने के लिए फॉर्म भरें!</string>
+        <string name="reason_hint">कारण</string>
+        <string name="your_message">आपका सन्देश</string>
+        <string name="send">भेजना</string>
+
+
+        <!--profile activity-->
+        <string name="profile">प्रोफाइल</string>
+        <string name="id_no" >आईडी सं. </string>
+        <string name="phone_no">फ़ोन सं.</string>
+        <string name="adhar_no">आधार सं.</string>
+        <string name="pan_no">पैन सं.</string>
+        <string name="dl_no">डीएल सं.</string>
+        <string name="dl_expiry">डीएल समाप्ति</string>
+        <string name="extra_cash">अतिरिक्त नकदी</string>
+        <string name="app_version">एप्लिकेशन वेरीज़न</string>
+        <string name="max_security">अधिकतम सुरक्षा जमा</string>
+        <string name="bank_details">बैंक विवरण</string>
+        <string name="assets">संपत्ति</string>
+        <string name="vehicle">वाहन</string>
+        <string name="upload_document">दस्तावेज़ अपलोड करें</string>
+
+
+        <!--payouts-->
+        <string name="daily">दैनिक</string>
+        <string name="weekly">साप्ताहिक</string>
+        <string name="monthly">मासिक</string>
+        <string name="total_delivery">कुल वितरण</string>
+        <string name="earnings">कमाई</string>
+        <string name="rating_incentive">रेटिंग प्रोत्साहन</string>
+        <string name="total_earning">कुल कमाई</string>
+
+
+        <!--order preference-->
+        <string name="order_prefence">
+                पसंदीदा क्षेत्र</string>
+        <string name="default_area">पसंदीदा प्राथमिक क्षेत्र</string>
+        <string name="preferred_area">पसंदीदा क्षेत्र</string>
+
+
+        <!--order details activity-->
+        <string name="total_payment">कुल भुगतान</string>
+        <string name="bill_details">बिल विवरण</string>
+        <string name="total_amount">कुल रकम</string>
+        <string name="round_off">पूर्ण</string>
+        <string name="total_bill">कुल बिल</string>
+        <string name="support">समर्थन</string>
+
+
+        <!--upload document fragment-->
+        <string name="add_document">दस्तावेज़ जोड़ें</string>
+        <string name="no_image_found">कोई छवि नहीं मिली</string>
+        <string name="front">सामने</string>
+        <string name="back">पीछे</string>
+
+
+        <!--select document fragment-->
+        <string name="personal_document">व्यक्तिगत दस्तावेज</string>
+        <string name="pan_card">पैन कार्ड</string>
+        <string name="bank_passbook">बैंक पासबुक</string>
+        <string name="adhar_card">आधार कार्ड (सामने और पीछे)</string>
+        <string name="driving_licence">ड्राइविंग लाइसेंस (सामने और पीछे)</string>
+        <string name="vehicle_document">वाहन के दस्तावेज</string>
+        <string name="vehicle_registration">वाहन पंजीकरण</string>
+        <string name="vehicle_image">वाहन छवि</string>
+
+        <!--fragment rating-->
+        <string name="avarage_rating">औसत रेटिंग</string>
+
+
+        <!-- start water delivery activity-->
+        <string name="confirm_delivery">
+                वितरण करे</string>
+        <string name="content_confirmation">क्या आप जल वितरण शुरु करना चाहते हैं ?</string>
+
+
+        <!--order cencelled dialog-->
+        <string name="order_cancelled">ऑर्डर रद्द</string>
+        <string name="cotent_cancelled_customer">आपका ऑर्डर ग्राहक द्वारा रद्द कर दिया गया है</string>
+
+        <!-- home kotlin file-->
+        <string name="inac">निष्क्रिय</string>
+        <string name="active">सक्रिय</string>
+
+
+        <!-- toggle button-->
+        <string name="on">चालू</string>
+        <string name="off">बंद</string>
+
+
+        <string name="salary">वेतन</string>
+        <string name="CURRENT_ORDER">वर्तमान ऑर्डर</string>
+
+</resources>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LogIn">
+
+
+    <ImageView
+        android:id="@+id/InnerLogo"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/pani_logo" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/InnerLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/comic"
+        android:text="Let's Paani"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/for_tanker_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/quick_sales"
+        android:text="@string/login_for"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/for_tanker_driver"
+        android:layout_margin="10dp"
+        android:paddingTop="15dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/MobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/quick_sales"
+            android:hint="@string/mobileno_hint"
+
+            android:inputType="number"
+            android:maxLines="1"
+            android:transitionName="text"
+            app:errorEnabled="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/inputlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circular_blue_button"
+        android:fontFamily="@font/comic"
+        android:text="@string/login_button"
+        android:textColor="@color/white" />
+
+    <!-- <com.victor.loading.rotate.RotateLoading
+             android:id="@+id/rotateloading"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="50dp"
+             app:loading_width="5dp"
+             app:loading_color="@color/colorPrimary"
+             android:layout_alignParentBottom="true"/>-->
+
+    <TextView
+        android:id="@+id/des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Login"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="@string/new_on_lets"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/RegisterNow"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/des"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/circular_blue_button"
+        android:fontFamily="@font/comic"
+        android:text="@string/registernow"
+        android:textColor="@color/white" />
+
+
+    <Spinner
+        android:id="@+id/chkLang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/language"
+        android:layout_margin="15dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="end" />
+</RelativeLayout>

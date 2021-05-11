@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<base-config cleartextTrafficPermitted="false | true">
+    <trust-anchors>
+        <certificates src="system" />
+    </trust-anchors>
+</base-config>

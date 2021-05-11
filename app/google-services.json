@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "978900753721",
+    "firebase_url": "https://letspaani-5436a.firebaseio.com",
+    "project_id": "letspaani-5436a",
+    "storage_bucket": "letspaani-5436a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978900753721:android:b52b75aa8acd996c0a9ce8",
+        "android_client_info": {
+          "package_name": "com.example.letspaanidriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978900753721-d2j568eme6m64voe4u4bh8o0na6p4r4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbfJbmCCNQYClyx7uYRdd8dRqFmp8WhtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978900753721-d2j568eme6m64voe4u4bh8o0na6p4r4n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

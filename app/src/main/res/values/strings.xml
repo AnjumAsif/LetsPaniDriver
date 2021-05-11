@@ -1,0 +1,257 @@
+<resources>
+    <string name="app_name">LetsPaaniDriver</string>
+    <string name="action_settings">Settings</string>
+    <string name="google_map_key">AIzaSyCYwlqPDipbyNoR18dWmUxBZRN8YWTC2ow</string>
+
+
+    <string-array name="language">
+        <item>Language</item>
+        <item>Hindi</item>
+        <item>English</item>
+    </string-array>
+
+
+    <string name="Bank_prompt">Choose a Bank</string>
+    <string-array name="Bank_name">
+        <item>--SELECT YOUR BANK--</item>
+        <item>ALLAHABAD BANK</item>
+        <item>ANDHRA BANK</item>
+        <item>BANK OF BARODA</item>
+        <item>BANK OF INDIA</item>
+        <item>BANK OF MAHARASHTRA</item>
+        <item>CANARA BANK</item>
+        <item>CENTRAL BANK OF INDIA</item>
+        <item>CORPORATION BANK</item>
+        <item>IDBI BANK LTD</item>
+        <item>IND BANK HOUSING LTD</item>
+        <item>INDBANK MERCHANT BANKING SERVICES LTD</item>
+        <item>INDIAN BANK</item>
+        <item>INDIAN OVERSEAS BANK</item>
+        <item>JAMMU AND KASHMIR BANK LTD</item>
+        <item>ORIENTAL BANK OF COMMERCE</item>
+        <item>PNB GILTS LTD</item>
+        <item>PUNJAB AND SIND BANK</item>
+        <item>PUNJAB NATIONAL BANK</item>
+        <item>STATE BANK OF INDIA</item>
+        <item>SYNDICATE BANK</item>
+        <item>UCO BANK</item>
+        <item>UNION BANK OF INDIA</item>
+        <item>UNITED BANK OF INDIA</item>
+        <item>AXIS BANK</item>
+        <item>BANDHAN BANK</item>
+        <item>CATHOLIC Syrian BANK</item>
+        <item>CITY UNION BANK</item>
+        <item>DCB BANK</item>
+        <item>DHANLAXMi BANK</item>
+        <item>FEDERAL BANK</item>
+        <item>HDFC BANK</item>
+
+
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--LoginScreenEnglish-->
+    <!--login screen-->
+    <string name="login_for">For Tanker Drivers</string>
+    <string name="mobileno_hint">Mobile Number</string>
+    <string name="login_button">Login</string>
+    <string name="new_on_lets">New On Let\'s Paani?</string>
+    <string name="registernow">Register Now</string>
+    <string name="hindi">Hindi</string>
+
+    <!--order history-->
+
+    <string name="order_req">Order Requests</string>
+    <string name="order_acc">Order Accepted</string>
+    <string name="active_hr">Active Hours</string>
+    <string name="cencel_by_c">Cancelled By Customer</string>
+    <string name="cencel_by_driver">Cancelled By Delivery Man</string>
+    <string name="delivery_complete">Deliveries Completed</string>
+    <string name="earning">Earning For The   Day</string>
+
+
+    <!--home activity-->
+    <string name="finish_water_delivery">Finish Current Delivery</string>
+    <string name="start_water">Start Water Delivery</string>
+
+    <string name="deliver">Deliver To :</string>
+    <string name="alert">ALERT!</string>
+    <string name="water_request">YOU HAVE NEW WATER REQUEST</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="have_you_reached">HAVE YOU REACHED CUSTOMER LOCATION ?</string>
+    <string name="customer_location">CUSTOMER LOCATION</string>
+    <string name="no">No</string>
+    <string name="yes">YES</string>
+    <string name="Deliver">Deliver</string>
+    <string name="cencel">CANCEL</string>
+    <string name="navigation">NAVIGATION</string>
+    <string name="customer_add">customer Add</string>
+
+
+    <!--activity ordercancelbyuser-->
+    <string name="order_cancel">Order Cancelled</string>
+    <string name="your_order_cencel">Your Order Hasbeen cancelled</string>
+    <string name="ok">OK</string>
+
+
+    <!--reach location-->
+    <string name="order_id">Order ID</string>
+    <string name="name">Name</string>
+    <string name="deliver_address">Delivery address</string>
+    <string name="payment_mode">Payment mode</string>
+    <string name="delivery_time">Delivery time</string>
+
+    <string name="total_collect_amount">Total Collectable Amount</string>
+    <string name="tanker_type">Tanker Type</string>
+    <string name="distance_travelled">Distance Travelled</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="discount_applied">Discount Applied</string>
+
+
+    <!--register-->
+
+    <string name="email_id">Email Id</string>
+    <string name="address">Address</string>
+    <string name="register">Register</string>
+
+
+    <!--bank details-->
+    <string name="add_bank_details">Add Bank Detail</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="bank_account_no">Bank Account No.</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="submit">Submit</string>
+
+
+    <!--drawer list-->
+    <string name="order_preference">Order Preferences</string>
+    <string name="payouts">Payouts</string>
+    <string name="trip_history">Order History</string>
+    <string name="history">History</string>
+    <string name="ratings">Ratings</string>
+    <string name="privacy_ploicy">Privacy Policy</string>
+    <string name="term_condition">Terms &amp; Condition</string>
+    <string name="change_lang">Change Language</string>
+    <string name="help">Help</string>
+    <string name="logout">Exit Let\'s Paani App</string>
+
+    <!--confirm water delivery-->
+    <string name="confirm">CONFIRM</string>
+    <string name="complete_water_delivery">HAVE YOU COMPLETED WATER DELIVERY ?</string>
+
+
+    <!--gallary camera-->
+    <string name="select_image">Select Image</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+
+
+    <!--rating given by tanker-->
+    <string name="rating">RATINGS</string>
+    <string name="rating_by_tanker">Please Give Rating to Customer</string>
+
+
+    <!-- start water delivery activity-->
+    <string name="confirm_delivery">CONFIRM DELIVERY</string>
+    <string name="content_confirmation">ARE YOU SURE YOU WANT TO START WATER DELIVERY ?</string>
+
+
+    <!--  otp activity-->
+    <string name="otp_activity_txt">ENTER THE 6-DIGIT CODE SENT TO YOU AT</string>
+    <string name="varify_otp">Verify OTP</string>
+
+    <!--trip history activity-->
+    <string name="current">Current</string>
+    <string name="delivered">Delivered</string>
+    <string name="cancelled">Cancelled</string>
+
+    <!--support activity-->
+    <string name="call">Call</string>
+    <string name="message">Message</string>
+
+    <string name="support_content_form">Please, fill in the form to get in touch!</string>
+    <string name="reason_hint">Reason</string>
+    <string name="your_message">Your Message</string>
+    <string name="send">Send</string>
+    <string name="CURRENT_ORDER">CURRENT ORDER</string>
+
+
+    <!--profile activity-->
+    <string name="profile">Profile</string>
+    <string name="id_no">ID No. </string>
+    <string name="phone_no">Phone No</string>
+    <string name="adhar_no">Adhar No.</string>
+    <string name="pan_no">PAN No.</string>
+    <string name="dl_no">DL No.</string>
+    <string name="dl_expiry">DL Expiry</string>
+    <string name="extra_cash">Extra Cash</string>
+    <string name="app_version">App Version</string>
+    <string name="max_security">Maximum Security Deposited</string>
+    <string name="bank_details">BANK DETAILS</string>
+    <string name="assets">ASSETS</string>
+    <string name="vehicle">Vehicle</string>
+    <string name="upload_document">Upload Documents</string>
+
+
+    <!--payouts-->
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="total_delivery">Total Deliveries</string>
+    <string name="earnings">Earnings</string>
+    <string name="rating_incentive">Rating Incentive</string>
+    <string name="total_earning">Total Earning</string>
+
+
+    <!--order preference-->
+    <string name="order_prefence">Preferred Areas</string>
+    <string name="default_area">Default Area</string>
+    <string name="preferred_area">Preferred Areas</string>
+
+
+    <!--order details activity-->
+    <string name="total_payment">Total Payment</string>
+    <string name="bill_details">Bill Details</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="round_off">Rounded Off</string>
+    <string name="total_bill">Total Bill</string>
+    <string name="support">SUPPORT</string>
+
+
+    <!--upload document fragment-->
+    <string name="add_document">Add Documents</string>
+    <string name="no_image_found">No Image Found</string>
+    <string name="front">FRONT</string>
+    <string name="back">BACK</string>
+
+
+    <!--select document fragment-->
+    <string name="personal_document">Personal Documents</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="bank_passbook">Bank Passbook</string>
+    <string name="adhar_card">Aadhar Card (Front and Back)</string>
+    <string name="driving_licence">Driving License (Front and Back)</string>
+    <string name="vehicle_document">Vehicle Documents</string>
+    <string name="vehicle_registration">Vehicle Registration</string>
+    <string name="vehicle_image">Vehicle Image</string>
+
+    <!--fragment rating-->
+    <string name="avarage_rating">Average Rating</string>
+
+    <!--order cencelled dialog-->
+    <string name="order_cancelled">ORDER CANCELLED</string>
+    <string name="cotent_cancelled_customer">Your order has been cancelled by the customer</string>
+    <!-- home kotlin file-->
+    <string name="inac">INACTIVE</string>
+    <string name="active">ACTIVE</string>
+    <!-- toggle button-->
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+
+    <string name="salary">salary</string>
+    <string name="wallet">Wallet</string>
+    <string name="cash">Cash</string>
+</resources>

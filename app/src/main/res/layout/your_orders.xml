@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="@color/white"
+                android:layout_height="match_parent">
+
+    <ImageView android:layout_width="30dp" android:layout_height="30dp"
+               android:src="@drawable/back_arrow"
+               android:id="@+id/back"
+               android:layout_margin="15dp"
+    />
+
+    <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/trip_history"
+              android:textStyle="bold"
+              android:layout_centerHorizontal="true"
+              android:layout_margin="15dp"
+              android:textSize="20sp"
+    />
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+          android:background="#cacaca"
+          android:id="@+id/line"
+          android:layout_below="@id/back"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:id="@+id/TagLayout"
+                  android:gravity="center"
+                  android:layout_margin="15dp"
+                  android:layout_below="@id/line"
+                  android:orientation="horizontal"
+                  android:layout_height="wrap_content">
+
+        <TextView android:layout_width="match_parent"
+                  android:text="@string/current"
+                  android:paddingTop="8dp"
+                  android:gravity="center"
+                  android:textColor="@color/white"
+                  android:id="@+id/Current"
+                  android:textSize="15sp"
+                  android:layout_weight="1"
+                  android:paddingBottom="8dp"
+                  android:background="@drawable/order_tab_selected_background"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="@string/delivered"
+                  android:paddingTop="8dp"
+                  android:gravity="center"
+                  android:paddingBottom="8dp"
+                  android:textSize="15sp"
+                  android:id="@+id/Delivered"
+                  android:background="@drawable/order_tab_background"
+                  android:textColor="@color/colorAccent"
+                  android:layout_weight="1"
+                  android:layout_height="wrap_content"/>
+        <TextView android:layout_width="match_parent"
+                  android:text="@string/cancelled"
+                  android:paddingTop="8dp"
+                  android:id="@+id/Cancelled"
+                  android:layout_weight="1"
+                  android:textSize="15sp"
+                  android:textColor="@color/colorAccent"
+                  android:gravity="center"
+                  android:paddingBottom="8dp"
+                  android:background="@drawable/order_tab_background"
+                  android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            android:id="@+id/RecyclerOrderList"
+            android:layout_below="@id/TagLayout"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

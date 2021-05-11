@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:layout_margin="20dp"
+              android:background="@color/white">
+
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_image"
+            android:padding="5dp"
+            android:layout_margin="15dp"
+            android:background="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+
+    <TextView
+            android:id="@+id/txtSelectCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+    <TextView
+            android:id="@+id/txtSelectGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gallery"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAllCaps="true"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:background="@color/colorAccent"
+            android:textColor="@color/white"/>
+
+
+</LinearLayout>

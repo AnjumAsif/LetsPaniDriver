@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#76D4FC</color>
+    <color name="colorPrimaryDark">#02B0FA</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorYellow">#FF8A00</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#cacaca</color>
+    <color name="green">#65F56B</color>
+
+
+    <color name="lightGrey">#cacaca</color>
+
+    <color name="colorrating">#FFFF9500</color>
+
+    <color name="colortrans">#FF555555</color>
+
+
+
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_height="60dp">
+
+        <ImageView android:layout_width="30dp" android:layout_height="30dp"
+                   android:layout_centerVertical="true"
+                   android:id="@+id/back"
+                   android:src="@drawable/white_back_arrow"
+                   android:layout_marginStart="15dp"
+        />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="@string/rating"
+                  android:textColor="@color/white"
+                  android:fontFamily="@font/quick_sales"
+                  android:layout_centerInParent="true"
+                  android:textSize="18sp"
+        />
+
+    </RelativeLayout>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/rating_by_tanker"
+              android:layout_above="@id/tankerman_pic"
+              android:layout_marginBottom="25dp"
+              android:layout_centerHorizontal="true"
+              android:fontFamily="@font/quick_sales"
+              android:textSize="18sp"
+    />
+    <ImageView android:layout_width="125dp" android:layout_height="125dp"
+               android:layout_centerInParent="true"
+               android:id="@+id/tankerman_pic"
+               android:src="@drawable/default_pic"/>
+
+    <RelativeLayout
+            android:id="@+id/StarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/tankerman_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp">
+
+        <ImageView
+                android:id="@+id/star3"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dark_star"/>
+
+        <ImageView
+                android:id="@+id/star2"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/star3"
+                android:src="@drawable/dark_star"/>
+
+
+        <ImageView
+                android:id="@+id/star1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@id/star2"
+                android:src="@drawable/dark_star"/>
+
+        <ImageView
+                android:id="@+id/star4"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/star3"
+                android:src="@drawable/dark_star"/>
+
+        <ImageView
+                android:id="@+id/star5"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@id/star4"
+                android:src="@drawable/dark_star"/>
+    </RelativeLayout>
+
+
+    <TextView android:layout_width="match_parent" android:layout_height="40dp"
+              android:text="@string/submit"
+              android:textColor="@color/white"
+              android:background="@color/colorAccent"
+              android:layout_alignParentBottom="true"
+              android:gravity="center"
+              android:id="@+id/Submit"
+              android:textStyle="bold"
+              android:textSize="18sp"
+              android:textAllCaps="true"
+              android:fontFamily="@font/quick_sales"
+    />
+</RelativeLayout>

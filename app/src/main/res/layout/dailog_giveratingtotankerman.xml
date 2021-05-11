@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               android:layout_centerVertical="true"
+              android:layout_gravity="center_vertical"
+              android:orientation="vertical"
+              android:layout_margin="10dp"
+                android:background="@color/white">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+                  android:layout_height="wrap_content">
+
+
+        <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/rating"
+                android:padding="5dp"
+                android:background="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"/>
+
+
+    <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rating_by_tanker"
+            android:layout_below="@id/textView"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="85dp" android:id="@+id/pic"
+            android:layout_margin="5dp"
+            android:src="@drawable/default_pic"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="85dp"/>
+
+
+    <TextView
+            android:id="@+id/txttankermanname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunil"
+            android:layout_below="@id/textView"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"/>
+
+
+
+
+        <RatingBar
+                android:id="@+id/ratrating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:stepSize="1"
+                android:layout_gravity="center_horizontal"
+                android:theme="@style/RatingBar"/>
+
+
+        <TextView
+                android:id="@+id/okcancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="bottom"
+                android:padding="5dp"
+                android:textAllCaps="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/colorAccent"
+                android:textSize="25sp"
+                android:layout_alignParentBottom="true"
+                android:textAlignment="center"
+                android:textColor="#ffffff"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.Home">
+
+    <Button
+        android:id="@+id/finishDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:text="@string/finish_water_delivery"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/startwaterdelivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#000"
+        android:text="@string/start_water"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+    </com.google.android.gms.maps.MapView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/navigation_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/dehaze" />
+
+        <TextView
+            android:id="@+id/StatusOfDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/ActiveSwitch"
+            android:text="@string/inac"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <com.github.angads25.toggle.widget.LabeledSwitch
+            android:id="@+id/ActiveSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="14sp"
+            app:colorBorder="@color/colorAccent"
+            app:on="false" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:visibility="gone"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/DeliverTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/quick_sales"
+                android:text="@string/deliver"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DeliverToHouseNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/DeliverTo"
+                android:fontFamily="@font/quick_sales"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/DeliveryLocationAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DeliverTo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/quick_sales"
+                android:lines="2"
+                android:text="@string/customer_add"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/AlertLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/heading_alert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/alert"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/alert_notes"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="-13dp"
+            android:src="@drawable/default_pic" />
+
+        <TextView
+            android:id="@+id/alert_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading_alert"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/profile_image"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/water_request"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/costumer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alert_notes"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="2dp"
+            android:text="HITESH GUPTA"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/costumer_name"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="2dp"
+            android:text="68/SP3,PRATAP NAGAR, SANGANER, JAIPUR"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/OrderAccept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timing"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/middle"
+            android:background="@drawable/alertbutton_back"
+            android:text="@string/accept" />
+
+        <TextView
+            android:id="@+id/middle"
+            android:layout_width="10dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/OrderReject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timing"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toEndOf="@id/middle"
+            android:background="@drawable/alertbuttonreject_back"
+            android:text="@string/reject" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/profile_image"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/yellow_star" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/AlertLayoutOrderComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="CUSTOMER LOCATION"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="1dp"
+            android:text="@string/have_you_reached"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnReachLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toStartOf="@id/middle"
+            android:background="@drawable/alertbutton_back"
+            android:text="@string/yes" />
+
+        <Button
+            android:id="@+id/btnNotReachLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/alertbuttonreject_back"
+            android:text="@string/no" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/findMe"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/white_circle"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_my_location_blue" />
+
+
+    <LinearLayout
+        android:id="@+id/layNavigateCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_rect_button"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/Deliver"
+            android:textAllCaps="false" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/TankerCancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/cencel"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNavigator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/navigation"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/Order"
+        android:icon="@drawable/order_icon"
+        android:title="@string/order_preference" />
+
+    <item
+        android:id="@+id/Payouts"
+        android:icon="@drawable/payouts"
+        android:title="@string/payouts" />
+
+    <item
+        android:id="@+id/wallet"
+        android:icon="@drawable/payouts"
+        android:title="@string/wallet" />
+
+
+    <item
+        android:id="@+id/TripHistory"
+        android:icon="@drawable/trip_history"
+        android:title="@string/trip_history" />
+
+    <item
+        android:id="@+id/History"
+        android:icon="@drawable/payment_history"
+        android:title="@string/history" />
+    <item
+        android:id="@+id/Ratings"
+        android:icon="@drawable/ratings"
+        android:title="@string/ratings" />
+    <item
+        android:id="@+id/Privacy"
+        android:icon="@drawable/privacy_policy"
+        android:title="@string/privacy_ploicy" />
+    <item
+        android:id="@+id/Terms"
+        android:icon="@drawable/term_condi"
+        android:title="@string/term_condition" />
+    <item
+        android:id="@+id/Lang"
+        android:icon="@drawable/ic_language_black_24dp"
+        android:title="@string/change_lang" />
+    <item
+        android:id="@+id/Help"
+        android:icon="@drawable/help"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/Logout"
+        android:icon="@drawable/log_out"
+        android:title="@string/logout" />
+
+</menu>

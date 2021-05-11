@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:id="@+id/OrderListLayout"
+                android:layout_height="wrap_content">
+
+    <ImageView android:layout_width="35dp" android:layout_height="35dp"
+               android:layout_marginTop="20dp"
+               android:id="@+id/TankerIcon"
+               android:layout_marginStart="20dp"
+               android:src="@drawable/small_tanker"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_toEndOf="@id/TankerIcon"
+              android:layout_marginTop="5dp"
+              android:textSize="16sp"
+              android:id="@+id/DateTime"
+              android:layout_marginStart="10dp"
+              android:text="Mon, Tue 23, 12:16 PM"
+              android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Small Water Tanker"
+              android:layout_below="@id/DateTime"
+              android:id="@+id/TankerTypeList"
+              android:textSize="14sp"
+              android:layout_toEndOf="@id/TankerIcon"
+              android:layout_marginStart="10dp"
+    />
+
+    <ImageView android:layout_width="10dp"
+               android:layout_height="10dp"
+               android:id="@+id/loco"
+               android:layout_marginStart="10dp"
+               android:src="@drawable/location"
+           android:layout_marginTop="3dp"
+               android:layout_below="@id/TankerTypeList"
+               android:layout_toEndOf="@id/TankerIcon"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sodala, Jaipur Rajasthan"
+              android:layout_below="@id/TankerTypeList"
+              android:layout_toEndOf="@id/loco"
+              android:textSize="13sp"
+              android:id="@+id/OrderListAddress"
+              android:layout_marginStart="3dp"
+    />
+    <TextView android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/OrderListAmount"
+              android:text="₹300"
+              android:layout_alignParentRight="true"
+              android:layout_marginEnd="20dp"
+              android:layout_marginTop="10dp"
+    />
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_below="@id/OrderListAddress"
+          android:layout_marginTop="10dp"
+          android:background="@color/grey"
+
+    />
+</RelativeLayout>

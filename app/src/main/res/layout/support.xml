@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView android:layout_width="wrap_content"
+               android:src="@drawable/back_arrow"
+               android:id="@+id/Support_Back"
+               android:layout_marginTop="15dp"
+               android:layout_marginStart="20dp"
+               android:layout_marginBottom="15dp"
+               android:layout_height="wrap_content"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/help"
+              android:layout_centerHorizontal="true"
+              android:layout_margin="15dp"
+              android:textStyle="bold"
+              android:fontFamily="@font/quick_sales"
+              android:textSize="20sp"
+    />
+    <TextView android:layout_width="match_parent" android:layout_height="1dp"
+              android:layout_below="@id/Support_Back"
+              android:background="#cacaca"
+    />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="@string/call"
+              android:layout_below="@id/Support_Back"
+              android:id="@+id/call"
+              android:layout_marginStart="20dp"
+              android:fontFamily="@font/quick_sales"
+              android:layout_marginTop="15dp"
+              android:textSize="18sp"
+    />
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/call"
+                    android:id="@+id/call_number"
+                    android:clickable="true" android:focusable="true">
+        <ImageView android:layout_width="15dp"
+                   android:src="@drawable/phone"
+                   android:layout_marginTop="5dp"
+                   android:layout_height="15dp"
+                   android:id="@+id/call_icon"
+                   android:layout_marginStart="20dp"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/number"
+                  android:layout_toEndOf="@id/call_icon"
+                  android:layout_alignBottom="@id/call_icon"
+                  android:fontFamily="@font/quick_sales"
+                  android:gravity="bottom"
+                  android:layout_marginStart="10dp"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/Mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quick_sales"
+            android:layout_below="@id/call_number"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/message"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:id="@+id/get"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/quick_sales"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Mess"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:text="@string/support_content_form"
+            android:textSize="13sp"/>
+
+    <EditText
+            android:id="@+id/Reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/quick_sales"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/backgroundgrey"
+            android:gravity="center_vertical"
+            android:hint="@string/reason_hint"
+            android:inputType="text"
+            android:padding="10dp"
+    />
+
+    <EditText
+            android:id="@+id/Message"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@id/Reason"
+            android:fontFamily="@font/quick_sales"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/backgroundgrey"
+            android:gravity="top"
+            android:hint="@string/your_message"
+            android:inputType="text"
+            android:padding="10dp"
+    />
+
+
+    <Button
+            android:id="@+id/Send"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/Message"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:fontFamily="@font/quick_sales"
+            android:background="@drawable/circular_blue_button"
+            android:text="@string/send"
+    />
+</RelativeLayout>

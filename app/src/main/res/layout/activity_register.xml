@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context=".activity.Register">
+
+
+    <ImageView
+            android:id="@+id/persoimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/person"
+            android:layout_alignBottom="@id/firstame"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/profile_image"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <EditText
+            android:id="@+id/firstame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/name"
+            android:inputType="none"
+            android:textColor="@color/colorAccent" />
+
+
+    <ImageView
+            android:id="@+id/emailimage"
+            android:layout_width="40dp"
+            android:layout_alignBottom="@id/email"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/mail"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/firstame"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/firstame"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="80dp"
+            android:ems="10"
+            android:hint="@string/email_id"
+            android:inputType="none"
+            android:textColor="@color/colorAccent" />
+
+    <ImageView
+            android:id="@+id/takerimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/tankertype"
+            app:srcCompat="@drawable/tanker"
+            android:layout_below="@id/email"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <EditText
+            android:id="@+id/tankertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/email"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="80dp"
+            android:ems="10"
+            android:hint="@string/tanker_type"
+            android:focusable="false"
+            android:inputType="none"
+            android:textColor="@color/colorAccent" />
+
+    <View
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/middle"
+            android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:id="@+id/callimage"
+            android:layout_alignBottom="@id/moile_no"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_phone_black_24dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/takerimage"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+    />
+
+    <EditText
+            android:id="@+id/moile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:hint="@string/mobileno_hint"
+            android:maxLength="10"
+            android:inputType="phone"
+            android:layout_below="@id/tankertype"
+            android:textColor="@color/colorAccent" />
+
+    <ImageView
+            android:id="@+id/homeimage"
+            android:layout_width="40dp"
+            android:layout_alignBottom="@id/address"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/home"
+            tools:ignore="VectorDrawableCompat"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/moile_no"
+            android:textColor="@color/colorAccent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+    />
+
+    <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/moile_no"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="15dp"
+            android:hint="@string/address"
+            android:paddingBottom="40dp"
+            android:inputType="none"
+            android:textColor="@color/colorAccent" />
+
+    <Button
+            android:id="@+id/register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/circular_blue_button"
+            android:text="@string/register"
+            android:textColor="@color/white"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/default_pic"
+            app:civ_border_width="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            app:civ_border_color="#FF000000"/>
+
+    <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_toEndOf="@id/middle"
+            android:background="@drawable/buttonbackground"
+            android:layout_marginStart="15dp"
+            android:layout_alignBottom="@id/profile_image"
+            android:layout_height="30dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
